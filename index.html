@@ -12,7 +12,17 @@
 </head>
 
 <body>
-<audio src="./Janjiku takkan kulepas.mp3" autoplay loop></audio>
+<audio id="backgroundAudio" loop>
+  <source src="./Janjiku takkan kulepas.mp3" type="audio/mpeg">
+</audio>
+  <button onclick="playAudio()">Play Music</button>
+<script>
+  function playAudio() {
+    var audio = document.getElementById('backgroundAudio');
+    audio.play();
+  }
+</script>
+  
   <div class="container">
     <div class="one">
       <h1 class="one">Hai
@@ -44,7 +54,7 @@
       </p>
     </div>
     <div class="six">
-      <img src="./HilwaNurliza.jpg" alt="" class="lydia-dp" id="imagePath">
+      <img src="../HilwaNurliza.jpg" alt="" class="lydia-dp" id="imagePath">
        <!-- bagian ini bisa dihilangkan-->
      <!-- <img src="img/hat.svg" alt="" class="hat">  -->
       <div class="wish">
